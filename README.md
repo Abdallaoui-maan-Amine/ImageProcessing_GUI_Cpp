@@ -42,7 +42,7 @@
 
 
 
-###### How teh graphic interface looks like:
+###### How this graphic interface looks like:
 
 
 ![This is an image](GUI.png)
