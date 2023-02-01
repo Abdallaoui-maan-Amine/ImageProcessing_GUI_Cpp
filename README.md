@@ -45,4 +45,4 @@
 ###### How teh graphic interface looks like:
 
 
-![This is an image](Graphic_Interface.PNG)
+![This is an image](GUI.PNG)
