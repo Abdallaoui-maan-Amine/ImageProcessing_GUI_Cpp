@@ -1,0 +1,4052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>118</red>
+        <green>118</green>
+        <blue>118</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>50</red>
+        <green>50</green>
+        <blue>50</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>177</red>
+        <green>177</green>
+        <blue>177</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>Image Processing GUI by AAM</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(50,50,50,1)
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #355C7D,  stop:0.5 #6C5B7B, stop:1 #C06C84);
+</string>
+   </property>
+   <widget class="QFrame" name="Login_frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1070</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>28</green>
+          <blue>40</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #355C7D,  stop:0.5 #6C5B7B, stop:1 #C06C84);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>190</y>
+       <width>521</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(240, 240, 240,0.1);
+border-radius: 20px;
+</string>
+     </property>
+     <widget class="QLineEdit" name="Login">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>240</y>
+        <width>331</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+      <property name="accessibleDescription">
+       <string/>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 25px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Username</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>425</y>
+        <width>331</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #C06C84;
+font-size:13pt;
+font-weight:bold;
+</string>
+      </property>
+      <property name="text">
+       <string>SIGN IN</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>521</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240,240,240,0.1);
+border-bottom-left-radius: 0%;
+border-bottom-right-radius: 0%;
+color : rgba(240,240,240,0.5)</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:50px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;Sign In&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Password">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>310</y>
+        <width>331</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 25px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Premium">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>28</green>
+          <blue>40</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #355C7D,  stop:0.5 #6C5B7B, stop:1 #C06C84);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="Premium_Log_out">
+     <property name="geometry">
+      <rect>
+       <x>1251</x>
+       <y>880</y>
+       <width>200</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+     </property>
+     <property name="text">
+      <string>LOG OUT</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="Premium_Title">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>20</y>
+       <width>600</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0, 0, 0, 0.1);
+background-color: rgba(192,108, 132,0.9);
+border-radius:20px;
+color : rgba(240,240,240,0.5);
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="autoFormatting">
+      <set>QTextEdit::AutoNone</set>
+     </property>
+     <property name="undoRedoEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QTextEdit::WidgetWidth</enum>
+     </property>
+     <property name="lineWrapColumnOrWidth">
+      <number>3</number>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="markdown">
+      <string>.
+
+**Welcome in Premium Mode**
+
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Welcome in Premium Mode&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="overwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="descriptor_Frame">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>100</y>
+       <width>750</width>
+       <height>831</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(240, 240, 240,0.1);
+border-radius:20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="Descriptor_Top_Frame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>731</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="add_Data_Button">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>130</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Add Data</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sort_Data">
+       <property name="geometry">
+        <rect>
+         <x>445</x>
+         <y>320</y>
+         <width>130</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+background-color: #C06C84;
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+       </property>
+       <property name="text">
+        <string>Sort Data</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="load_Data_Button">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>200</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+       </property>
+       <property name="text">
+        <string>Load Data</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="set_Data_Button">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>320</y>
+         <width>130</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+</string>
+       </property>
+       <property name="text">
+        <string>Set Data Cell</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="Descriptor_Table">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>711</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(246, 245, 244);
+background-color: rgba(100, 100, 100, 0.2);
+
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+</string>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="autoScroll">
+        <bool>true</bool>
+       </property>
+       <property name="autoScrollMargin">
+        <number>18</number>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="showDropIndicator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>false</bool>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="cornerButtonEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="columnCount">
+        <number>6</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>20</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>120</number>
+       </attribute>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>25</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>34</number>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Image_path</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Title</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Source</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Price</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Access</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="delete_Data_Button">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>320</y>
+         <width>130</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+background-color: #C06C84;
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+       </property>
+       <property name="text">
+        <string>Delete Data</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="filter_Data">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>320</y>
+         <width>130</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+background-color: #C06C84;
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+       </property>
+       <property name="text">
+        <string>Filter Data</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="add_Data_Frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1000</y>
+        <width>721</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240, 240, 240,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="path_Name_Add_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Path Name</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_Add_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>70</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Id</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="title_Add_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Title</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="source_Add_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>170</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Source</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="price_Add_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>220</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Price</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="permission_Access_Widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>270</y>
+         <width>331</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);</string>
+       </property>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>287</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(240,240,240,0);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.5);</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:700; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Select permissions access&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Allow_radioButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>40</y>
+          <width>81</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(240,240,240,0);
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+        </property>
+        <property name="text">
+         <string>Allow</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Deny_radioButton">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>112</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(240,240,240,0);
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+        </property>
+        <property name="text">
+         <string>Deny</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="save_After_Add_Data_Button">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>150</y>
+         <width>150</width>
+         <height>74</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192, 108, 132, 1);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="update_Data_Frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1000</y>
+        <width>721</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240, 240, 240,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="line_Number_Update_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Line number</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="column_Number_Update_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>75</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Column number</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="save_After_Update_Data_Butto">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>59</y>
+         <width>150</width>
+         <height>74</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192, 108, 132, 1);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_Value_Add_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>130</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Cell value</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="delete_Data_Frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1000</y>
+        <width>721</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240, 240, 240,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="line_Number_Delete_Data_Edited_Text">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>331</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240,240,240,0.05);
+border-radius: 20px;
+Padding-left:20px;
+font-size:14pt;
+font-weight:bold;
+color : rgba(240, 240, 240, 0.7);</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Line number</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="save_After_Delete_Data_Button">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>20</y>
+         <width>150</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192, 108, 132, 1);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="sort_Data_Frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1000</y>
+        <width>721</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240, 240, 240,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="sort_By_Price_Button">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>20</y>
+         <width>200</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192, 108, 132, 1);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Price</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sort_By_Title_Button">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>20</y>
+         <width>200</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192, 108, 132, 1);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Title</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_3">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>23</y>
+         <width>101</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgba(255, 255, 255, 0.6)</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;Sort by :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <zorder>sort_By_Price_Button</zorder>
+      <zorder>textBrowser_3</zorder>
+      <zorder>sort_By_Title_Button</zorder>
+     </widget>
+     <widget class="QFrame" name="filter_Data_Frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>1000</y>
+        <width>701</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(240, 240, 240,0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>381</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240, 240, 240,0.05);</string>
+       </property>
+       <widget class="QTextBrowser" name="price_Filter_Title">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+background-color: rgba(0, 0,  0, 0.2);
+color:rgba(255, 255, 255, 0.6)</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Price&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="price_Min_SpinBox">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+padding-left : 10px;
+font-size:12pt;
+font-weight:bold;</string>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="price_Max_SpinBox">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>60</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+padding-left : 10px;
+font-size:12pt;
+font-weight:bold;</string>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>999</number>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="price_Min_Text">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>62</y>
+          <width>51</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgba(255, 255, 255, 0.6);
+background-color:rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Min :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="price_Max_Text">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>62</y>
+          <width>51</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgba(255, 255, 255, 0.6);
+background-color:rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Max :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>10</y>
+         <width>261</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(240, 240, 240,0.05);</string>
+       </property>
+       <widget class="QTextBrowser" name="Acces_Filter_Title">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+background-color: rgba(0, 0,  0, 0.2);
+color:rgba(255, 255, 255, 0.6)</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Access permissions&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="allow_Filter_RadioButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>55</y>
+          <width>81</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+padding-left : 10px;
+font-size:12pt;
+font-weight:bold;
+background-color: rgba(255, 255, 255, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+        </property>
+        <property name="text">
+         <string>Allow</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="deny_Filter_RadioButton">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>55</y>
+          <width>81</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+padding-left : 10px;
+font-size:12pt;
+font-weight:bold;
+background-color: rgba(255, 255, 255, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+        </property>
+        <property name="text">
+         <string>Deny</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="not_Defined_Filter_RadioButton">
+        <property name="geometry">
+         <rect>
+          <x>63</x>
+          <y>80</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:15px;
+padding-left : 10px;
+font-size:12pt;
+font-weight:bold;
+background-color: rgba(255, 255, 255, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+        </property>
+        <property name="text">
+         <string>Not Defined</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="descriptor_Visualization">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>1000</y>
+        <width>620</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding:15px;
+font-weight:bold;
+font-size:15pt;
+color:rgba(255, 255, 255, 0.6);
+line-height: 25;
+background-color:rgba(255, 255, 255, 0.05);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>Descriptor_Top_Frame</zorder>
+     <zorder>add_Data_Frame</zorder>
+     <zorder>update_Data_Frame</zorder>
+     <zorder>delete_Data_Frame</zorder>
+     <zorder>sort_Data_Frame</zorder>
+     <zorder>descriptor_Visualization</zorder>
+     <zorder>filter_Data_Frame</zorder>
+    </widget>
+    <widget class="QFrame" name="image_Frame">
+     <property name="geometry">
+      <rect>
+       <x>849</x>
+       <y>100</y>
+       <width>990</width>
+       <height>750</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(240, 240, 240,0.1);
+border-radius:20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="histogramm_Button">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:30%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Histogramm</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="edge_Detection_Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="laplacien_Button">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>50</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:5%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Laplacien</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="gradient_Button">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:5%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Gradient</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Edge Detection&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="image_Figure">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>129</y>
+        <width>951</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : rgba(240,240,240,0.5);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700; font-style:italic;&quot;&gt;Your Image Here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="filter_Convolution_Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="average_Button">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>50</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:5%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Average</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="median_Button">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:5%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Median</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Filtre convolution&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="image_Segmentation_Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>620</y>
+        <width>951</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <widget class="QTextBrowser" name="Image_Segmentation_Title">
+       <property name="geometry">
+        <rect>
+         <x>286</x>
+         <y>5</y>
+         <width>391</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Image Segmentation by Color Selection&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="r_Min_HorizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>85</x>
+         <y>45</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="g_Min_HorizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>45</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="b_Min_HorizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>45</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="r_Max_HorizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>85</x>
+         <y>75</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="value">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="g_Max_HorizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>75</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="value">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="b_Max_HorizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>75</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="singleStep">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="invertedAppearance">
+        <bool>false</bool>
+       </property>
+       <property name="invertedControls">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="R_TextBrowser">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>41</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 0, 0, 0.2);
+background-color: qlineargradient(spread:pad, x1:0.062, y1:0.023864, x2:1, y2:1, stop:0 rgba(255, 0, 0, 0.6), stop:1 rgba(255, 0, 0, 0));
+padding-top:5px;
+font-size : 12px;
+border-radius : 10px;
+padding-bottom:-2px;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Min&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:-5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Max&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="R_TextBrowser_2">
+       <property name="geometry">
+        <rect>
+         <x>355</x>
+         <y>40</y>
+         <width>41</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 255, 0, 0.2);
+background-color: qlineargradient(spread:pad, x1:0.062, y1:0.023864, x2:1, y2:1, stop:0 rgba(0, 255, 0, 0.6), stop:1 rgba(0, 255, 0, 0));
+padding-top:5px;
+font-size : 12px;
+border-radius : 10px;
+padding-bottom:-2px;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Min&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:-5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Max&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="R_TextBrowser_3">
+       <property name="geometry">
+        <rect>
+         <x>675</x>
+         <y>40</y>
+         <width>41</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 255, 0.2);
+background-color: qlineargradient(spread:pad, x1:0.062, y1:0.023864, x2:1, y2:1, stop:0 rgba(0, 0, 255, 0.6), stop:1 rgba(0, 0, 255, 0));
+padding-top:5px;
+font-size : 12px;
+border-radius : 10px;
+padding-bottom:-2px;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Min&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:-5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Max&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="edge_Enhancement_Button">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>20</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:30%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Edge 
+Enhacement</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gray_Scale_Button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #C06C84;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 150), stop:0.55 rgba(127, 127, 127, 150), stop:0.98 rgba(240, 240, 240, 150), stop:1 rgba(255, 255, 255, 150));
+
+font-size:9pt;
+font-weight:bold;
+border-radius:15%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rgb_Button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #C06C84;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 150), stop:0.55  rgba(0, 255, 0, 100), stop:0.98  rgba(0, 0, 255, 100), stop:1 rgba(0, 0, 0, 100));
+font-size:11pt;
+font-weight:bold;
+border-radius:15%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="edge_Detection_Widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>20</y>
+        <width>261</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="canny_Button">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>50</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:11pt;
+font-weight:bold;
+border-radius:5%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Canny Filter</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="segment_Detection_Button">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>50</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #C06C84;
+font-size:10pt;
+font-weight:bold;
+border-radius:5%;
+color:rgba(255, 255, 255, 0.6);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Segment
+Detection</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_6">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>10</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:rgba(255, 255, 255, 0.6);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Hough Algorithm&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="t_Count_Hough_VerticalSlider">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>16</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="minimum">
+        <number>50</number>
+       </property>
+       <property name="maximum">
+        <number>120</number>
+       </property>
+       <property name="singleStep">
+        <number>5</number>
+       </property>
+       <property name="value">
+        <number>120</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_Visualization">
+     <property name="geometry">
+      <rect>
+       <x>849</x>
+       <y>1000</y>
+       <width>990</width>
+       <height>750</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(240, 240, 240,0.1);
+border-radius:20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="pre_Image_Figure">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>951</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0.1);
+color : rgba(240,240,240,0.5)</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700; font-style:italic;&quot;&gt;Your Image Here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <zorder>image_Frame</zorder>
+    <zorder>Premium_Log_out</zorder>
+    <zorder>Premium_Title</zorder>
+    <zorder>descriptor_Frame</zorder>
+    <zorder>frame_Visualization</zorder>
+   </widget>
+   <widget class="QFrame" name="Basic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>192</red>
+          <green>28</green>
+          <blue>40</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="LinearGradientPattern">
+         <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="0.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+          <gradientstop position="0.000000000000000">
+           <color alpha="255">
+            <red>53</red>
+            <green>92</green>
+            <blue>125</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="0.500000000000000">
+           <color alpha="255">
+            <red>108</red>
+            <green>91</green>
+            <blue>123</blue>
+           </color>
+          </gradientstop>
+          <gradientstop position="1.000000000000000">
+           <color alpha="255">
+            <red>192</red>
+            <green>108</green>
+            <blue>132</blue>
+           </color>
+          </gradientstop>
+         </gradient>
+        </brush>
+       </colorrole>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #355C7D,  stop:0.5 #6C5B7B, stop:1 #C06C84);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTextBrowser" name="Basic_Title">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>20</y>
+       <width>600</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0, 0, 0, 0.1);
+background-color: rgba(192,108, 132,0.9);
+border-radius:20px;
+color : rgba(240,240,240,0.5)
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="autoFormatting">
+      <set>QTextEdit::AutoNone</set>
+     </property>
+     <property name="undoRedoEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QTextEdit::WidgetWidth</enum>
+     </property>
+     <property name="lineWrapColumnOrWidth">
+      <number>3</number>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Welcome in Basic Mode&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="overwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Basic_Log_out">
+     <property name="geometry">
+      <rect>
+       <x>1590</x>
+       <y>880</y>
+       <width>200</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+     </property>
+     <property name="text">
+      <string>LOG OUT</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_Visualization_Basic">
+     <property name="geometry">
+      <rect>
+       <x>849</x>
+       <y>100</y>
+       <width>990</width>
+       <height>750</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(240, 240, 240,0.1);
+border-radius:20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="pre_Image_Figure_Basic">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>951</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0.1);
+color : rgba(240,240,240,0.5)</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700; font-style:italic;&quot;&gt;Your Image Here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="descriptor_Frame_Basic">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>100</y>
+       <width>750</width>
+       <height>831</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(240, 240, 240,0.1);
+border-radius:20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="Descriptor_Top_Frame_Basic">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>731</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QTableWidget" name="Descriptor_Table_Basic">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>711</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(246, 245, 244);
+background-color: rgba(100, 100, 100, 0.2);
+
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+</string>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="autoScroll">
+        <bool>true</bool>
+       </property>
+       <property name="autoScrollMargin">
+        <number>18</number>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="showDropIndicator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>false</bool>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="cornerButtonEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="columnCount">
+        <number>6</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>20</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>120</number>
+       </attribute>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>25</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>34</number>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Image_path</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Title</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Source</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Price</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Access</string>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="load_Data_Button_Basic">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>200</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(192,108, 132,0.9);
+background-color: rgba(0, 0,  0, 0.2);
+font-size:13pt;
+font-weight:bold;
+border-radius:20px;
+color:rgba(255, 255, 255, 0.6)
+</string>
+       </property>
+       <property name="text">
+        <string>Load Data</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="descriptor_Visualization_Basic">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>490</y>
+        <width>620</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding:15px;
+font-weight:bold;
+font-size:15pt;
+color:rgba(255, 255, 255, 0.6);
+line-height: 25;
+background-color:rgba(255, 255, 255, 0.05);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>Basic</zorder>
+   <zorder>Login_frame</zorder>
+   <zorder>Premium</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuContact_Us">
+    <property name="title">
+     <string>Contact Us</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuManage">
+    <property name="title">
+     <string>Manage</string>
+    </property>
+    <widget class="QMenu" name="menuDescriptor">
+     <property name="title">
+      <string>Descriptor</string>
+     </property>
+     <widget class="QMenu" name="menuFilter">
+      <property name="title">
+       <string>Filter</string>
+      </property>
+      <widget class="QMenu" name="menuPrice">
+       <property name="title">
+        <string>Price</string>
+       </property>
+       <addaction name="actionLess_than"/>
+      </widget>
+      <addaction name="menuPrice"/>
+     </widget>
+     <addaction name="menuFilter"/>
+    </widget>
+    <addaction name="actionImage"/>
+    <addaction name="separator"/>
+    <addaction name="menuDescriptor"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuFilter_2">
+    <property name="title">
+     <string>Filter</string>
+    </property>
+    <widget class="QMenu" name="menuData_by_Price">
+     <property name="title">
+      <string>Data by Price</string>
+     </property>
+     <addaction name="actionLess_than_2"/>
+     <addaction name="actionMore_than"/>
+     <addaction name="actionBetween"/>
+     <addaction name="actionMore_than_2"/>
+    </widget>
+    <addaction name="menuData_by_Price"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuContact_Us"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuManage"/>
+   <addaction name="menuFilter_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImage">
+   <property name="text">
+    <string>Image</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionLess_than">
+   <property name="text">
+    <string>Less than</string>
+   </property>
+  </action>
+  <action name="actionLess_than_2">
+   <property name="text">
+    <string>Free</string>
+   </property>
+  </action>
+  <action name="actionMore_than">
+   <property name="text">
+    <string>Less than</string>
+   </property>
+  </action>
+  <action name="actionBetween">
+   <property name="text">
+    <string>Between </string>
+   </property>
+  </action>
+  <action name="actionMore_than_2">
+   <property name="text">
+    <string>More than</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
